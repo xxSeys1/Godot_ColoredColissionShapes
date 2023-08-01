@@ -81,7 +81,7 @@ func _update_visualizer_material() -> void:
 	_visualizer_mesh.transparency = 1 - _mesh_opacity
 	
 	if _use_texture_transparency:
-		_visualizer_material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA_SCISSOR
+		_visualizer_material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA_DEPTH_PRE_PASS
 	else:
 		_visualizer_material.transparency = BaseMaterial3D.TRANSPARENCY_DISABLED
 	
